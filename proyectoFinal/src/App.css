@@ -19,7 +19,7 @@ header {
 }
 
 section {
-  padding: 2rem
+  padding: 2rem;
 }
 
 footer {
@@ -33,21 +33,27 @@ footer {
 }
 
 /* STYLES-PRODUCT */
-
 .contenedorProduct {
   background-color: aqua;
+  min-height: 86vh; /* Ajusta según sea necesario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
 }
 
 .productTitulo {
   background-color: blueviolet;
   text-align: center;
-  
+  padding: 20px;
 }
 
 .productCajas {
   background-color: blue;
+  padding: 0  50px 0 50px;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .productLista {

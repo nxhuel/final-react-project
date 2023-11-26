@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const productsData = [
-    { id: 1, nombre: 'Producto 1', precio: 19.99, imagen: mantenimiento},
+    { id: 1, nombre: 'Producto 1', precio: 19.99, imagen: mantenimiento },
     { id: 2, nombre: 'Producto 2', precio: 29.99, imagen: mantenimiento },
     { id: 3, nombre: 'Producto 3', precio: 39.99, imagen: mantenimiento },
     { id: 4, nombre: 'Producto 4', precio: 49.99, imagen: mantenimiento },
