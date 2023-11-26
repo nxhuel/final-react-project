@@ -1,11 +1,9 @@
-import './Product.css'
-
-function Product({ nombre, precio }) {
+function Product({ nombre, precio, imagen}) {
     return (
-        <div className="contenedorProduct">
+        <div className="productLista">
             <h3>{nombre}</h3>
             <p>Precio: ${precio}</p>
-            <img src="#" alt="#" />
+            <img src={imagen} alt={nombre} />
             <button>Ver detalles</button>
         </div>
     );

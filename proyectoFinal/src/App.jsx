@@ -1,13 +1,14 @@
 import Product from './components/Product';
+import mantenimiento from './assets/mantenimiento.jpg';
 import './App.css';
 
 function App() {
   const productsData = [
-    { id: 1, nombre: 'Producto 1', precio: 19.99 },
-    { id: 2, nombre: 'Producto 2', precio: 29.99 },
-    { id: 3, nombre: 'Producto 3', precio: 39.99 },
-    { id: 4, nombre: 'Producto 4', precio: 49.99 },
-    { id: 5, nombre: 'Producto 5', precio: 59.99 },
+    { id: 1, nombre: 'Producto 1', precio: 19.99, imagen: mantenimiento},
+    { id: 2, nombre: 'Producto 2', precio: 29.99, imagen: mantenimiento },
+    { id: 3, nombre: 'Producto 3', precio: 39.99, imagen: mantenimiento },
+    { id: 4, nombre: 'Producto 4', precio: 49.99, imagen: mantenimiento },
+    { id: 5, nombre: 'Producto 5', precio: 59.99, imagen: mantenimiento },
   ];
 
   return (
@@ -19,14 +20,13 @@ function App() {
         </div>
       </header>
 
-      <section>
-        <h2>Productos Destacados</h2>
-        <div id="products">
+      <section className="contenedorProduct">
+        <h2 className='productTitulo'>Productos Destacados</h2>
+        <div className="productCajas" id="products">
           {productsData.map(product => (
-            <Product key={product.id} nombre={product.nombre} precio={product.precio} />
+            <Product key={product.id} nombre={product.nombre} precio={product.precio} imagen={product.imagen} />
           ))}
         </div>
-
       </section>
 
       <footer>

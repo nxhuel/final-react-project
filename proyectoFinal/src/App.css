@@ -19,7 +19,7 @@ header {
 }
 
 section {
-  padding: 2em;
+  padding: 2rem
 }
 
 footer {
@@ -30,4 +30,34 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* STYLES-PRODUCT */
+
+.contenedorProduct {
+  background-color: aqua;
+}
+
+.productTitulo {
+  background-color: blueviolet;
+  text-align: center;
+  
+}
+
+.productCajas {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productLista {
+  padding: 40px 0 40px 0; 
+  display: grid;
+  gap: 20px;
+}
+
+.productLista img {
+  background-color: burlywood;
+  width: 180px;
+  height: 180px;
 }
