@@ -9,6 +9,9 @@ function App() {
     { id: 3, nombre: 'Producto 3', precio: 39.99, imagen: mantenimiento },
     { id: 4, nombre: 'Producto 4', precio: 49.99, imagen: mantenimiento },
     { id: 5, nombre: 'Producto 5', precio: 59.99, imagen: mantenimiento },
+    { id: 6, nombre: 'Producto 6', precio: 69.99, imagen: mantenimiento },
+    { id: 7, nombre: 'Producto 7', precio: 79.99, imagen: mantenimiento },
+    { id: 8, nombre: 'Producto 8', precio: 89.99, imagen: mantenimiento },
   ];
 
   return (
@@ -18,7 +21,7 @@ function App() {
           <h1>BESTSHOES</h1>
         </div>
       </header>
-      
+
       <section className="contenedorProduct">
         <h2 className='productTitulo'>Productos Destacados</h2>
         <div className="productCajas" id="products">
