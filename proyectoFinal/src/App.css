@@ -68,6 +68,10 @@ footer {
   border: 1px solid #ccc;
 }
 
+.productLista.mostrarDetalles {
+  background: rgba(200, 200, 200, 0.5); /* Color gris con opacidad */
+}
+
 .productLista img {
   /* background-color: burlywood; */
   width: 180px;
