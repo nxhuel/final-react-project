@@ -15,11 +15,10 @@ function App() {
     <>
       <header>
         <div>
-          <h1>Tu Marca</h1>
-          <p>Descripción breve de tu producto o servicio.</p>
+          <h1>BESTSHOES</h1>
         </div>
       </header>
-
+      
       <section className="contenedorProduct">
         <h2 className='productTitulo'>Productos Destacados</h2>
         <div className="productCajas" id="products">
@@ -30,7 +29,7 @@ function App() {
       </section>
 
       <footer>
-        <p>&copy; 2023 Tu Marca. Todos los derechos reservados.</p>
+        <p>&copy; 2023 BestShoes. Todos los derechos reservados.</p>
       </footer>
     </>
   )
