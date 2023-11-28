@@ -4,23 +4,18 @@ import '../App.css'
 function Product({ nombre, precio, imagen, detalles }) {
     const [mostrarDetalles, setMostrarDetalles] = useState(false);
 
-    const handleMostrarDetalles = () => {
-        setMostrarDetalles(!mostrarDetalles);
-    };
-
     return (
         <>
-            <div className="productLista">
+            <div className={`productLista ${mostrarDetalles ? 'mostrarDetalles' : ''}`}>
                 <h3>{nombre}</h3>
                 <p>Precio: ${precio}</p>
                 <img src={imagen} alt={nombre} />
-                <button onClick={handleMostrarDetalles}>
+                <button onClick={() => setMostrarDetalles(!mostrarDetalles)}>
                     Ver detalles
                 </button>
-                {mostrarDetalles && (
-                    <p>{detalles}</p>
-                )}
+                {mostrarDetalles && <div className="detallesContainer">{detalles}</div>}
             </div>
+            
         </>
     )
 }

@@ -59,8 +59,8 @@ footer {
   margin: 0 auto;
 }
 
-
 .productLista {
+  position: relative;
   padding: 40px 20px 30px 20px; 
   display: grid;
   gap: 10px;
@@ -68,8 +68,19 @@ footer {
   border: 1px solid #ccc;
 }
 
-.productLista.mostrarDetalles {
-  background: rgba(200, 200, 200, 0.5); /* Color gris con opacidad */
+.detallesContainer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.274);
+  display: none;
+}
+
+.mostrarDetalles .detallesContainer {
+  display: block;
 }
 
 .productLista img {
